@@ -1,0 +1,115 @@
+<?php
+session_start();
+if (!isset($_SESSION['loggedin'])) {
+    header("Location: login.php");
+    exit;
+}
+?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Portfolio</h1>
+        <p>Team Members: Debojeet Kumar Palit and Ayan Paul</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#qualifications">Qualifications</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#interests">Interests</a></li>
+        </ul>
+    </nav>
+    <section id="login">
+        <h2>Login</h2>
+        <form action="login.php" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="person">
+            <h3>Debojeet Kumar Palit</h3>
+            <img src="C:\Users\deboj\OneDrive\Desktop\Minor Project IMS\WhatsApp Image 2024-12-11 at 02.58.40_91ff6c28.jpg" alt="Debojeet Photo">
+            <p>I am a motivated fresher in Data Analytics with skills in Python, SQL, Excel, and Tableau. Proficient in data cleaning, analysis, and visualization, I am passionate about uncovering insights to support decision-making. Eager to join a dynamic team, contribute to impactful projects, and grow as a Data Analyst</p>
+        </div>
+        <div class="person">
+            <h3>Ayan Paul </h3>
+            <img src="" alt="Ayan Photo">
+            <p>I am a passionate fresher in Software Development with skills in programming languages like Python, Java, and C++, and experience in web development using HTML, CSS, and JavaScript. Eager to build innovative solutions, I’m committed to learning and contributing to impactful projects while growing as a professional in the tech industry.</p>
+        </div>
+    </section>
+
+    <section id="qualifications">
+        <h2>Qualifications</h2>
+        <ul>
+            <li>For DEBOJEET :- <ol>
+                <li>10th from ICSE boards | Little Flower School, Gorakhpur | 86% </li>
+                <li>12th from ISC boards | Little flower School, Gorakhpur | 83%</li>
+                <li>Currently Pursuing BCA from IMS Noida | 5th Semester</li>
+            </ol></li>
+            <li>For AYAN :- <ol>
+                <li>10th </li>
+                <li>12th </li>
+                <li>Currently Pursuing BCA from IMS Noida | 5th Semester</li>
+            </ol></li>
+        </ul>
+    </section>
+
+    <section id="training">
+        <h2>Training</h2>
+        <p><b>DEBOJEET</b> - Data Analysis Course from TOPVARSITY | Youtube</p>
+        <p><b>AYAN</b> - MERN Stack Development from CodeNation | CodeNation</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>For DEBOJEET :- Data Analysis</li>
+            <li>For AYAN :- Software Development</li>
+        </ul>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Debojeet - Anime | Fitness | Books | Dancing</li>
+            <li>Ayan - Web Series | Acting | Singing</li>
+        </ul>
+    </section>
+
+    <section id="interests">
+        <h2>Interests</h2>
+        <ul>
+            <li>DEBOJEET :- Content Creation | Cryptocurrency | Graphic Designing</li>
+            <li>AYAN :- Photography | Videography | Traveling</li>
+        </ul>
+    </section>
+
+    <footer>
+        <h2>Contact Us</h2>
+        <div>
+            <h3>Debojeet Kumar Palit</h3>
+            <p>Email: debojeetpalit@gmail.com</p>
+            <p>Phone: (+91) 76680 45680</p>
+        </div>
+        <div>
+            <h3>Ayan Paul</h3>
+            <p>Email: <!-- Add email --></p>
+            <p>Phone: (+91) 8822721393 | (+91) 83998 11467</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
